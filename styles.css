@@ -1,0 +1,136 @@
+/* Source of icon: https: //icon-sets.iconify.design/circum/search/ */
+* {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	background-image: url(./media/pawel-czerwinski-tyk4HgfV3q8-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+}
+.panel-wrapper {
+	display: grid;
+	grid-template-columns: 300px 1fr 1fr;
+	width: 60%;
+	position: absolute;
+	top: 20%;
+}
+
+.panel-wrapper-header {
+	grid-column: span 2;
+	grid-row: 2;
+	background-color: #ebcfc3ce;
+	margin: 10px 220px 10px 0;
+	padding-left: 30px;
+}
+.panel-wrapper-paragraph {
+	background-color: #ebcfc3ce;
+	padding-left: 30px;
+	padding: 5px 5px 5px 30px;
+	margin-right: 50px;
+}
+.panel-wrapper-details-wrapper {
+	grid-column: 2;
+	grid-row: 3;
+	background-color: #ebcfc3ce;
+	margin: 5px 220px 5px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	font-size: 18px;
+}
+
+.panel-wrapper-search-box-wrapper {
+	grid-column: 3;
+	grid-row: 2;
+	display: flex;
+	align-items: center;
+	background-color: #ebcfc3ce;
+	margin: 10px 0px 10px 0;
+	box-shadow: inset 0px 2px 5px 0px;
+	border: none;
+}
+
+.panel-wrapper-temperature {
+	grid-column: 1;
+	background-color: #ebcfc3ce;
+	font-size: 75px;
+	margin: 5px 50px 5px 0px;
+	padding: 100px 10px 100px 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	max-height: 300px;
+}
+
+.search-box-button {
+	background-color: #ebcfc300;
+	cursor: pointer;
+	max-width: 50px;
+	height: 50px;
+	padding: 0px 0px 0px 5px;
+}
+
+.search-icon {
+	height: 30px;
+	width: 30px;
+}
+
+.search-box-input {
+	background-color: #ebcfc300;
+	border: none;
+	font-size: 18px;
+	padding: 10px 0px 10px 10px;
+	width: 90%;
+}
+
+.search-box-input:focus-visible {
+	outline: none;
+}
+
+.details-header {
+	padding: 15px 0px 15px 0px;
+}
+
+@media (max-width: 768px) {
+	body {
+		background-size: auto;
+	}
+
+	.panel-wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		position: absolute;
+		top: 5%;
+	}
+
+	.panel-wrapper-paragraph {
+		margin: 10px 0 10px 0;
+		font-size: 18px;
+	}
+
+	.panel-wrapper-header {
+		margin: 10px 0px 10px 0;
+	}
+
+	.panel-wrapper-temperature {
+		height: 10%;
+		width: 100%;
+		padding: 10px 0 10px 0px;
+	}
+
+	.panel-wrapper-details-wrapper {
+		margin: 5px 0 5px 0;
+		padding: 10px 0 10px 0;
+		font-size: 25px;
+	}
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TOP Weather App</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="panel-wrapper">
+			<p id="forecast" class="panel-wrapper-paragraph">Mostly Sunny</p>
+			<h1 id="current-location" class="panel-wrapper-header">Hell</h1>
+			<div class="panel-wrapper-search-box-wrapper">
+				<button class="search-box-button" id="input-button">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="1rem"
+						height="1rem"
+						viewBox="0 0 24 24"
+						class="search-icon"
+					>
+						<path
+							fill="currentColor"
+							d="M20.031 20.79c.46.46 1.17-.25.71-.7l-3.75-3.76a7.904 7.904 0 0 0 2.04-5.31c0-4.39-3.57-7.96-7.96-7.96s-7.96 3.57-7.96 7.96c0 4.39 3.57 7.96 7.96 7.96c1.98 0 3.81-.73 5.21-1.94zM4.11 11.02c0-3.84 3.13-6.96 6.96-6.96c3.84 0 6.96 3.12 6.96 6.96s-3.12 6.96-6.96 6.96c-3.83 0-6.96-3.12-6.96-6.96"
+						/>
+					</svg>
+				</button>
+
+				<input
+					type="text"
+					placeholder="Search City"
+					class="search-box-input"
+					id="input-location"
+				/>
+			</div>
+			<div class="panel-wrapper-temperature" id="current-temp">40k&deg;F</div>
+			<div class="panel-wrapper-details-wrapper">
+				<h3 id="current-feels-like" class="details-header">
+					Feels Like: 38k&deg;F
+				</h3>
+				<h3 id="current-wind" class="details-header">Wind: 0 mph</h3>
+				<h3 id="current-humidity" class="details-header">Humidity: -40%</h3>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
